@@ -69,7 +69,7 @@ toggleClase(Titulo,"5"); // Eliminar
 //1.8
 
 const toggleClaseArg = (obj, clase, bool)=>{
-    obj.classList.toggle(clase, bool)
+    obj.classList.toggle(clase, bool);
     console.log(obj.classList.toString());
 };
 
@@ -77,3 +77,10 @@ toggleClaseArg(Titulo,"6", true); // Agregar
 toggleClaseArg(Titulo,"6", true); // Lo Mantiene Agregado
 
 //1.9
+
+const replaceOldNewClass = (obj, oldClass, newClass)=>{
+    obj.classList.replace(oldClass, newClass)
+    console.log(obj.classList.toString());
+};
+
+replaceOldNewClass(Titulo,"6", "7"); // remplaza
